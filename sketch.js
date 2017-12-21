@@ -11,7 +11,7 @@
   function setup() {
     var slider;
     eSlider = createSlider(0, 255, 125);
-    eSlider.position(60, 30);
+    eSlider.position(80, 30);
 
     createCanvas(windowWidth, windowHeight);
     background(0);
