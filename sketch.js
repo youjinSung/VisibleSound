@@ -19,11 +19,11 @@
     fill(255);
     noStroke();
     textFont(font);
-    text("Say something...", width / 2, height / 2);
-    text("and choose your Emotion",width / 2-50,(height / 2)+100);
+    text("Say something...", width / 2-100, height / 2);
+    text("and choose your Emotion",width / 2-150,(height / 2)+100);
     textSize(35);
     textFont(font);
-    text("I will include your feeling", (width / 2)+20,
+    text("I will include your feeling", (width / 2)-80,
       (height / 2) + 160);
 
 
@@ -34,12 +34,9 @@
     if (speechRec.resultValue) {
       background(0);
       var val = eSlider.value();
-      
-    
-
-
+     
       var S = speechRec.resultString;
-      var points = font.textToPoints(S, width/2, height/2, 192);
+      var points = font.textToPoints(S, 100, height/2, 192);
       for (var i = 0; i < points.length; i++) {
         var pt = points[i];
 			
