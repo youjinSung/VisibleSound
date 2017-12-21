@@ -11,7 +11,7 @@
   function setup() {
     var slider;
     eSlider = createSlider(0, 255, 125);
-    eSlider.position(80, 30);
+    eSlider.position(60, 30);
 
     createCanvas(windowWidth, windowHeight);
     background(0);
@@ -58,7 +58,7 @@
     }
     
       textSize(20);
-      text("bad", eSlider.x - 30, 35);
+      text("bad", eSlider.x - 50, 35);
       text("great", eSlider.x + eSlider.width + 10, 35);
   }
   
